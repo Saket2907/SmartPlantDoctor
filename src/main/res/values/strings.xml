@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartPlantDoctor</string>
+    <string name="app_title">Smart Plant Doctor</string>
+    <string name="app_subtitle">Growing healthy together</string>
+    <string name="welcome">WELCOME</string>
+    <string name="app_subtitle_dashboard">Your AI Powered Plant Assistant</string>
+    <string name="scan_plant_title">Scan Plant Leaf</string>
+    <string name="scan_plant_desc">Identify diseases instantly</string>
+    <string name="ai_chatbot_title">AI Chatbot</string>
+    <string name="ai_chatbot_desc">Ask any plant related question</string>
+    <string name="history_title">History</string>
+    <string name="history_desc">View your previous scans</string>
+    <string name="my_garden_title">My Garden</string>
+    <string name="my_garden_desc">Care reminders for your plants</string>
+    <string name="analyzing">Analyzing…</string>
+    <string name="scan_result_prefix">Result: %s</string>
+    <string name="point_camera_hint">Point camera at a leaf</string>
+    <string name="scan_now">Scan Now</string>
+    <string name="chat_hint">Ask about your plant…</string>
+    <string name="scan_history_title">Scan History</string>
+    <string name="my_garden_title_screen">My Garden</string>
+    <string name="add_plant">Add Plant</string>
+    <string name="plant_name_hint">Plant Name</string>
+    <string name="add_new_plant_title">Add New Plant</string>
+    <string name="add_button">Add</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="health_score_format">Health: %1$d%%</string>
+    <string name="plant_icon_desc">Plant Icon</string>
+    <string name="send_desc">Send message</string>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="My Green Profile 🌿"
+                android:textColor="@color/text_main"
+                android:textSize="28sp" />
+
+            <!-- Profile Image Section -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/primary_botanical"
+                app:strokeWidth="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_garden"
+                    android:padding="24dp"
+                    app:tint="@color/primary_botanical" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-bold"
+                android:text="User Name"
+                android:textColor="@color/text_main"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user@example.com"
+                android:textColor="@color/primary_botanical"
+                android:textSize="14sp" />
+
+            <!-- Stats Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardBackgroundColor="@color/glass_white"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/glass_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="20dp"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/statScans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/text_main"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scans" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/statHealthy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/text_main"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Healthy" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView android:id="@+id/statPlants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:fontFamily="sans-serif-black" android:textSize="20sp" android:textColor="@color/text_main"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Plants" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Settings List -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/glass_white"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/glass_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:gravity="start|center_vertical"
+                        android:text="Notification Settings"
+                        android:textColor="@color/text_main"
+                        app:icon="@android:drawable/ic_lock_idle_alarm"
+                        app:iconTint="@color/primary_botanical" />
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:gravity="start|center_vertical"
+                        android:text="Premium Subscription"
+                        android:textColor="@color/text_main"
+                        app:icon="@android:drawable/star_on"
+                        app:iconTint="@color/accent_lime" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogout"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:gravity="start|center_vertical"
+                        android:text="Log Out"
+                        android:textColor="@android:color/holo_red_light"
+                        app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                        app:iconTint="@android:color/holo_red_light" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
